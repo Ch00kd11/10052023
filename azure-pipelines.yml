@@ -29,6 +29,6 @@ steps:
   displayName: 'Install dependencies'
 
 - powershell: 
-    robot pythonpath TestCases.robot
+    robot --pythonpath TestCases.robot
   displayName: 'Run robot tests'
 
