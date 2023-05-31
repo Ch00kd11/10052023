@@ -29,6 +29,6 @@ steps:
   displayName: 'Install dependencies'
 
 - powershell: 
-    robot --pythonpath TestCases.robot
+    robot --pythonpath   '\ex3\search_flights\search_flights.robot'
   displayName: 'Run robot tests'
 
