@@ -6,9 +6,15 @@ Library         SearchFlightPage.py     Firefox    #Chrome
 Open search page
     Open
 
+Open Home Page
+    Open
+    
 Close pages
     Close
-
+    
+Close Browsers
+    Close
+    
 Select departure
     [Arguments]  ${city}
 
