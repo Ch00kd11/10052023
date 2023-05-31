@@ -28,6 +28,12 @@ steps:
   displayName: 'Install dependencies'
 
 - powershell: 
-    robot --pythonpath -x 'output.xml' -t '.\ex3\search_flights\search_flights.robot'
+    robot --pythonpath -x 'outputxunit.xml' '.\ex3\search_flights\.'
   displayName: 'Run robot tests'
 
+- task: PublishTestResults@2
+  inputs:
+      testResultsFiles: outputxunit.xml
+      searchFolder: 'D:\a\1\s\'
+  condition: succeededOrFailed()
+  displayName: 'Publish Test Results outputxunit.xml'
