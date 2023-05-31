@@ -28,6 +28,6 @@ steps:
   displayName: 'Install dependencies'
 
 - powershell: 
-    robot --pythonpath . -x outputxunit.xml  '\10052023\ex3\search_flights\search_flights.robot'
+    robot --pythonpath . -x outputxunit.xml  \10052023\ex3\search_flights
   displayName: 'Run robot tests'
 
